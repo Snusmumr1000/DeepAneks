@@ -44,7 +44,10 @@ class DeepAnek:
 
 
 def main():
-    DeepAnek().post()
+    posted = 0
+    while not posted:
+        DeepAnek().post()
+        posted = 1
 
 
 if __name__ == "__main__":
